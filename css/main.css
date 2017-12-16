@@ -18,3 +18,33 @@ body {
   color: #ffffff;
 }
 
+.new-app {
+  background-color: #FDC02F;
+  color: #ffffff;
+}
+
+.content-info {
+  border: 2px solid white;
+  padding: 3rem;
+}
+
+.content {
+  padding: 2.5rem;
+}
+
+.content p {
+  padding-top: 1.5em;
+  margin: 0;
+}
+
+.bg-driver {
+  background-image: url('../assets/images/conduce.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.397);
+  padding: 5rem 3rem 13rem 3rem;
+}
