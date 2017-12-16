@@ -1,1 +1,20 @@
-/* Los estilos de tu proyecto */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+.bg-taxi {
+  background-image: url('../assets/images/taxi.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-position: center bottom;
+  padding-top: 3.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-home {
+  background-color: #FDC02F;
+  padding: 1em;
+  color: #ffffff;
+}
+
