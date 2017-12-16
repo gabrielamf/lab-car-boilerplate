@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
 	<!-- link google fonts -->
 	<link hrefm ="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet">
+	<!-- link iconos fonts -->
+	<link rel="stylesheet" href="assets/icons/font-awesome/css/font-awesome.min.css">
 	<!-- link a mi hoja de estilos -->
 	<link rel="stylesheet" href="css/main.css">
 	<title>Lab car</title>
@@ -24,7 +26,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!-- Me : link ubicar mejor el logo -->
-					<img src="assets/images/logoForma.png" alt="logo-labcar">
+					<img class="img-responsive" src="assets/images/logoForma.png" alt="Logo-labcar">
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
@@ -62,6 +64,65 @@
 					<button type="button" class="btn btn-default">Conviértete en conductor</button>
 				</div>
 	</section>
+	<section class="new-app">
+		<div class="container-rate">
+				<strong>Tarifas</strong>
+				<p>Consulta las tarifas Labcar aquí</p>
+				<form class="form-horizontal">
+						<div class="form-group">
+							<label for="inputPoint" class="col-xs-2 control-label">
+									<img src="assets/images/shape.png" class="img-responsive" alt="Responsive image">
+							</label>
+							<div class="col-xs-9">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="Ingresa punto de partida">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputDestination" class="col-xs-2 control-label">
+								<img src="assets/images/shape2.png" class="img-responsive" alt="Responsive image">	
+							</label>
+							<div class="col-xs-9">
+								<input type="password" class="form-control" id="inputPassword3" placeholder="Ingresa un destino">
+							</div>
+						</div>
+					</form>
+					<button type="button" class="btn btn-default">!TRAZAR RUTA!</button>
+					<div class="geo"></div>
+			</div>
+	</section>
+	<footer>
+		<div class="container">
+			<img src="assets/images/logoBlanco.png" class="img-responsive" alt="Responsive image">
+			<hr>
+			<div class="row">
+				<div class="col-xs-6">
+					<ul class="list-unstyled">
+						<li><a href="#">Viaja</a></li>
+						<li><a href="#">Conduce</a></li>
+						<li><a href="#">Ciudades</a></li>
+						<li><a href="#">Ciudades</a></li>
+						<li><a href="#">Entregas</a></li>
+						<li><a href="#">Cómo funciona?</a></li>
+						<li><a href="#">Países</a></li>
+						<li><a href="#">Seguridad</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-5">
+						<ul class="list-inline">
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></li>
+						</ul>
+						<img src="assets/images/enBadgeWebGeneric.png" class="img-responsive" alt="Responsive image">
+						<img src="assets/images/appstore.png" class="img-responsive" alt="Responsive image">
+					</div>
+			</div>
+			<hr>
+			<p>&copy;  2017 LabCar technologies Inc.</p>
+		</div>
+	</footer>
 
 	<!-- link jquery minificado -->
 	<script src="vendors/bootstrap/js/jquery.js"></script>
