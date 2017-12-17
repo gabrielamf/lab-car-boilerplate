@@ -165,10 +165,9 @@ p.line::after {
 
 /* MAPA */
 .map {
-  width: 100%;
-  height: 15rem;
+  height: 25rem;
   border: 1px solid white;
-  margin: 7rem 0 5rem;
+  margin: 3rem 1rem 3rem 1rem;
 }
 
 /* SECCION FOOTER */
@@ -180,8 +179,8 @@ footer img:nth-child(1){
   margin-top: 2rem;
 }
 
-footer ul.list-unstyled li {
-  padding-bottom: 2rem;
+.text-footer {
+  padding-bottom: 1rem;
   font-size: 1.2rem;
 }
 
@@ -194,14 +193,26 @@ footer a {
 }
 
 footer ul.list-inline {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 } 
 
-footer img:nth-child(2) {
+.logo-store {
   margin-bottom: 1.5rem;
 }
 
 footer p {
   color:#ffffff;
   font-size: 1.2rem;
+}
+
+@media (min-width:992px) {
+  .store-desktop {
+    position: absolute;
+    transform: translateY(-23rem);
+    right: 0;
+  }
+
+  footer ul.list-inline {
+    margin-bottom: 1rem;
+  }  
 }
