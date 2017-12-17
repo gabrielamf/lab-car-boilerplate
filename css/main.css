@@ -25,12 +25,47 @@ header img {
   padding: 2.5rem 2.5rem 3rem;
 }
 
+.card-home h2 {
+  margin: 0;
+}
+
+.card-home h2:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
 h3 {
   margin: 0;
   padding-bottom: .5rem;
 }
 
-.card-home button {
+p.line::before {
+  content: " ";
+  height: 1px;
+  display: inline-block;
+  background-color: #ffffff;
+  margin-right: 5rem;
+  width: 12rem;
+}
+
+p.line::after {
+  content: " ";
+  height: 1px;
+  display: inline-block;
+  background-color: #ffffff;
+  margin-left: 5rem;
+  width: 12rem;
+}
+
+.card-home .btn-desktop-1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card-home .btn-desktop-2 {
+  margin-top: 2rem;
+}
+
+.card-home btn-mobile {
   margin-top: 3rem;
 }
 
@@ -60,6 +95,32 @@ h3 {
 
 .background-color p {
   margin-bottom: 2rem;
+}
+
+.border-white-desktop {
+  margin: 3rem 0 3rem;
+  border: 1px solid #ffffff;
+  transform: translateX(-10rem);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.phone-desktop {
+  padding: 3rem 0 3rem 3rem;
+}
+
+.content-phone {
+  margin-right: 10rem;
+}
+
+.content-phone h3 {
+  margin-bottom: 1rem;
+}
+
+.content-phone p {
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 /* SECCION DRIVER */
