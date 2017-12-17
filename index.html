@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -7,19 +8,21 @@
 	<!-- link boosttrap -->
 	<link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
 	<!-- link google fonts -->
-	<link hrefm ="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet">
+	<link hrefm="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet">
 	<!-- link iconos fonts -->
 	<link rel="stylesheet" href="assets/icons/font-awesome/css/font-awesome.min.css">
 	<!-- link a mi hoja de estilos -->
 	<link rel="stylesheet" href="css/main.css">
 	<title>Lab car</title>
 </head>
+
 <body>
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					 aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -30,97 +33,149 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Viaja</a></li>
-						<li><a href="#">Conduce</a></li>
-						<li><a href="#">Inicia sesión</a></li>
+						<li>
+							<a href="#">Viaja</a>
+						</li>
+						<li>
+							<a href="#">Conduce</a>
+						</li>
+						<li>
+							<a href="#">Inicia sesión</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
+	<!-- SECCIÓN HOME -->
 	<section class="bg-taxi">
-		<div class="card-home">
-				<p>Comienza a viajar con</p>
-				<img class="img-responsive" src="assets/images/logoBlanco.png" alt="Logo-labcar">
-				<button type="button" class="btn btn-default">Descarga el app</button>
+		<div class="card-home col-xs-10">
+			<h3>Comienza a viajar</h3>
+			<h3>con
+				<img class="logo-white" src="assets/images/logoBlanco.png" alt="Logo-labcar">
+			</h3>
+			<button type="button" class="btn btn-default">Descarga el app</button>
 		</div>
 	</section>
-	<section class="new-app">
-		<div class="content">
-				<div class="row content-info">
-					<div class="col-xs-12">
-							<p>La nueva app</p>
-							<img src="assets/images/iPhone6Plus.png" class="img-responsive" alt="Responsive image">
-					</div>
-				</div>
-				<!-- Me: centrar mejor -->
-				<p>Llega a tu destino aún más rápido</p>
+	<!-- SECCIÓN NEW-APP -->
+	<section class="container-fluid background-color">
+		<div class="row border-white">
+			<div class="col-xs-6 col-xs-offset-3">
+				<h4>La nueva app</h4>
 			</div>
+			<div class="col-xs-10 col-xs-offset-1">
+				<img src="assets/images/iPhone6Plus.png" class="img-responsive" alt="Responsive image">
+			</div>
+		</div>
+		<div>
+			<p>Llega a tu destino aún más rápido</p>
+		</div>
 	</section>
+	<!-- SECCIÓN DRIVER -->
 	<section class="bg-driver">
-			<div class="overlay">
-					<strong>Conduce cuando quieras</strong>
-					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-					<button type="button" class="btn btn-default">Conviértete en conductor</button>
-				</div>
+		<div class="overlay">
+			<strong>Conduce cuando quieras</strong>
+			<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+			<button type="button" class="btn btn-default btn-color">Conviértete en conductor</button>
+		</div>
 	</section>
-	<section class="new-app">
-		<div class="container-rate">
-				<strong>Tarifas</strong>
+	<!-- SECCIÓN TARIFA -->
+	<section id="rate" class="background-color container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<p><strong>Tarifas</strong></p>
 				<p>Consulta las tarifas Labcar aquí</p>
 				<form class="form-horizontal">
-						<div class="form-group">
-							<label for="inputPoint" class="col-xs-2 control-label">
-									<img src="assets/images/shape.png" class="img-responsive" alt="Responsive image">
-							</label>
-							<div class="col-xs-9">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="Ingresa punto de partida">
-							</div>
+					<div class="form-group">
+						<label for="inputPoint" class="col-xs-1 control-label">
+							<img src="assets/images/shape.png" alt="Icono partida">
+						</label>
+						<div class="col-xs-9">
+							<input type="email" class="form-control btn-color" id="inputEmail3" placeholder="Ingresa punto de partida">
 						</div>
-						<div class="form-group">
-							<label for="inputDestination" class="col-xs-2 control-label">
-								<img src="assets/images/shape2.png" class="img-responsive" alt="Responsive image">	
-							</label>
-							<div class="col-xs-9">
-								<input type="password" class="form-control" id="inputPassword3" placeholder="Ingresa un destino">
-							</div>
+					</div>
+					<div class="form-group">
+						<label for="inputDestination" class="col-xs-1 control-label">
+							<img src="assets/images/shape2.png" alt="Icono destino">
+						</label>
+						<div class="col-xs-9">
+							<input type="password" class="form-control btn-color" id="inputPassword3" placeholder="Ingresa un destino">
 						</div>
-					</form>
-					<button type="button" class="btn btn-default">!TRAZAR RUTA!</button>
-					<div class="geo"></div>
+					</div>
+				</form>
+				<button type="button" class="btn btn-default center-block">!TRAZAR RUTA!</button>
 			</div>
+		</div>
+		<div class="map"></div>
 	</section>
+	<!-- SECCIÓN FOOTER -->
 	<footer>
-		<div class="container">
+		<div class="container-fluid">
 			<img src="assets/images/logoBlanco.png" class="img-responsive" alt="Responsive image">
 			<hr>
 			<div class="row">
 				<div class="col-xs-6">
 					<ul class="list-unstyled">
-						<li><a href="#">Viaja</a></li>
-						<li><a href="#">Conduce</a></li>
-						<li><a href="#">Ciudades</a></li>
-						<li><a href="#">Ciudades</a></li>
-						<li><a href="#">Entregas</a></li>
-						<li><a href="#">Cómo funciona?</a></li>
-						<li><a href="#">Países</a></li>
-						<li><a href="#">Seguridad</a></li>
+						<li>
+							<a href="#">Viaja</a>
+						</li>
+						<li>
+							<a href="#">Conduce</a>
+						</li>
+						<li>
+							<a href="#">Ciudades</a>
+						</li>
+						<li>
+							<a href="#">Ciudades</a>
+						</li>
+						<li>
+							<a href="#">Entregas</a>
+						</li>
+						<li>
+							<a href="#">Cómo funciona?</a>
+						</li>
+						<li>
+							<a href="#">Países</a>
+						</li>
+						<li>
+							<a href="#">Seguridad</a>
+						</li>
 					</ul>
 				</div>
 				<div class="col-xs-5">
-						<ul class="list-inline">
-							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></li>
-						</ul>
-						<img src="assets/images/enBadgeWebGeneric.png" class="img-responsive" alt="Responsive image">
-						<img src="assets/images/appstore.png" class="img-responsive" alt="Responsive image">
-					</div>
+					<ul class="list-inline">
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-apple" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-play" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+					<img src="assets/images/enBadgeWebGeneric.png" class="img-responsive" alt="Responsive image">
+					<img src="assets/images/appstore.png" class="img-responsive" alt="Responsive image">
+				</div>
 			</div>
 			<hr>
-			<p>&copy;  2017 LabCar technologies Inc.</p>
+			<p>&copy; 2017 LabCar technologies Inc.</p>
 		</div>
 	</footer>
 
