@@ -135,6 +135,8 @@ p.line::after {
   color:#ffffff;
   background-color: #FDC02F;
   border: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .overlay {
@@ -203,6 +205,10 @@ footer ul.list-inline {
 footer p {
   color:#ffffff;
   font-size: 1.2rem;
+}
+
+.profile {
+
 }
 
 @media (min-width:992px) {
