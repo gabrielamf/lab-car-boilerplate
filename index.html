@@ -90,51 +90,53 @@
             <form class="form-horizontal">
               <div class="form-group">
                 <div class="col-xs-6">
-                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Nombre">
+                  <input type="email" class="form-control" placeholder="Nombre">
                 </div>
                 <div class="col-xs-6">
-                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Apellido">
+                  <input type="email" class="form-control" placeholder="Apellido">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-xs-12">
-                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Correo Electrónico: ejemplo@correo.mx">
+                  <input type="email" class="form-control" placeholder="Correo Electrónico: ejemplo@correo.mx">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-xs-12">
-                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Teléfono">
+                  <input type="email" class="form-control" placeholder="Teléfono">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-xs-12">
-                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Contraseña">
+                  <input type="email" class="form-control" placeholder="Contraseña">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-xs-12">
-                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Ciudad">
+                  <input type="email" class="form-control" placeholder="Ciudad">
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-xs-12">
-                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="(Opcional) Código de invitación">
+                  <input type="email" class="form-control" placeholder="(Opcional) Código de invitación">
                 </div>
               </div>
               <div class="form-group">
-                  <div class="col-xs-12">
-                    <button type="button" class="btn btn-block btn-lg">¿Cómo te enteraste de nosotros?<span class="glyphicon glyphicon-chevron-down"></span></button>
-                  </div>
+                <div class="col-xs-12">
+                  <button type="button" class="btn btn-block btn-lg">¿Cómo te enteraste de nosotros?
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
                 </div>
-                <div class="form-group">
-                  <div class="col-xs-12">
-                    <button type="submit" class="btn btn-block btn btn-info btn-lg">Enviar</button>
-                  </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <button type="submit" class="btn btn-block btn btn-info btn-lg">Enviar</button>
+                </div>
             </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
   <!-- SECCIÓN NEW-APP -->
   <section class="container-fluid background-color">
@@ -167,10 +169,54 @@
       <div class="overlay col-xs-12 col-md-4 col-md-offset-8">
         <strong>Conduce cuando quieras</strong>
         <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-        <button type="button" class="btn btn-default btn-color">Conviértete en conductor</button>
+        <button type="button" class="btn btn-default btn-color">
+          <a href="#" data-toggle="modal" data-target="#driver-modal">Conviértete en conductor</a>
+        </button>
       </div>
     </div>
   </section>
+  <!-- MODAL DRIVER -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="driver-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label>¿Tienes vehículo de 4 puertas?</label>
+              <select class="form-control">
+                <option>Sí</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Marca</label>
+              <select class="form-control">
+                <option>Modelo 1</option>
+              </select>
+              <p>¿No ves tu vehículo en la lista? Envía un correo electrónico a</p>
+              <a href="#">socios@carLab.com</a>
+            </div>
+            <div class="form-group">
+              <label>Año</label>
+              <select class="form-control">
+                <option>2017</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Número de matrícula</label>
+              <input type="email" class="form-control" placeholder="Número de matrícula">
+            </div>
+            <h4>La información de la matrícula ayuda a los clientes a identificar tu vehículo.</h4>
+            <button type="submit" class="btn btn-block btn-info btn-lg">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- SECCIÓN TARIFA -->
   <section id="rate" class="background-color container-fluid">
     <div class="row">
@@ -185,7 +231,7 @@
               <img src="assets/images/shape.png" alt="Icono partida">
             </label>
             <div class="col-xs-9">
-              <input type="email" class="form-control btn-color" id="inputEmail3" placeholder="Ingresa punto de partida">
+              <input type="email" class="form-control btn-color" placeholder="Ingresa punto de partida">
             </div>
           </div>
           <div class="form-group">
@@ -200,7 +246,10 @@
         <button type="button" class="btn btn-default center-block text-uppercase">!trazar ruta!</button>
       </div>
       <div class="col-xs-12 col-md-5">
-        <div class="map"></div>
+        <div class="map">
+          <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d54562569.19495025!2d-70.63952465!3d-33.417118800000004!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512518657591"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -352,11 +401,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-
     <!-- link jquery minificado -->
     <script src="vendors/bootstrap/js/jquery.js"></script>
     <!-- link bootstrap minificado -->
