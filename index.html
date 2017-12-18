@@ -63,9 +63,77 @@
       <h4>Viaja con
         <img class="logo-white" src="assets/images/logoBlanco.png" alt="Logo-labcar">
       </h4>
-      <button type="button" class="btn btn-default btn-desktop-1 text-uppercase">regístrate</button>
+      <a class="btn btn-default btn-desktop-1 text-uppercase" href="#" role="button" data-toggle="modal" data-target="#register">regístrate</a>
       <p class="line">O bien</p>
       <button type="button" class="btn btn-default btn-desktop-2">Conviértete en un conductor</button>
+    </div>
+    <!-- MODAL REGISTER -->
+    <div id="register" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12">
+                <div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-block btn-lg btn-black">¿Ya tienes una cuenta?</button>
+                  </div>
+                  <p class="text-uppercase text-center">O crea una cuenta nueva</p>
+                </div>
+              </div>
+            </div>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <div class="col-xs-6">
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Nombre">
+                </div>
+                <div class="col-xs-6">
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Correo Electrónico: ejemplo@correo.mx">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Teléfono">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Contraseña">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Ciudad">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="(Opcional) Código de invitación">
+                </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-xs-12">
+                    <button type="button" class="btn btn-block btn-lg">¿Cómo te enteraste de nosotros?<span class="glyphicon glyphicon-chevron-down"></span></button>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <button type="submit" class="btn btn-block btn btn-info btn-lg">Enviar</button>
+                  </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- SECCIÓN NEW-APP -->
@@ -260,24 +328,31 @@
               <form>
                 <div class="form-group">
                   <div class="input-group">
-                    <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
-                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Username">
+                    <div class="input-group-addon">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username">
                   </div>
                 </div>
                 <div class="form-group">
-                    <div class="input-group">
-                      <div class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
-                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Password">
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
                     </div>
+                    <input type="text" class="form-control" placeholder="Password">
+                  </div>
                 </div>
                 <button type="submit" class="btn btn-primary center-block btn-color text-uppercase">login</button>
-                <p class="text-center">Forgot password? <a href="#">Click here</a></p>
+                <p class="text-center">Forgot password?
+                  <a href="#">Click here</a>
+                </p>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+
 
 
 

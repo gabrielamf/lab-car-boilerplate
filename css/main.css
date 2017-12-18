@@ -38,6 +38,11 @@ h3 {
   padding-bottom: .5rem;
 }
 
+.btn-black {
+  background-color: #2B2B2B;
+  color: #ffffff;
+}
+
 p.line::before {
   content: " ";
   height: 1px;
